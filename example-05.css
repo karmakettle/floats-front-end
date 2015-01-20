@@ -10,23 +10,51 @@
 	margin: 0 auto;
 }
 
-.header {}
+.header::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
 /* hint! what do you have to add here? */
 
-.logo {}
+.logo {
+	float: left;
+}
 
-.navigation {}
+.navigation {
+	float: right;
+}
 
-.sidebar {}
+.sidebar {
+	float: left;
+	width: 250px;
+	height: 350px;
+}
 
-.main-content {}
+.main-content::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
 /* hint! you have to contain the floated children elements. */
 
 .sub-content {
-	/* hint! */
+	float: right;
+	width: 600px;
+	height: 150px;
 }
 .sub-content-2 {
-	/* hint! */
+	float: right;
+	clear: right;
+	width: 600px;
+	height: 150px;
+	margin-top: 20px;
 }
 
-.footer {}
+.footer {
+	clear: both;
+}
