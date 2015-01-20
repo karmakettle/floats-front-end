@@ -6,29 +6,42 @@
 /* Example 06 */
 
 .container {
-	width: 1024px; /* what happens to the widget boxes when you change this width? */
+	width: 1024px; /* what happens to the widget boxes when you change this width? --the browser fits as many widgets as possible on one line */
 	margin: 0 auto;
 }
 
 
-.main-content {}
+.main-content::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
 /* hint! what do you need to add here? */
 
 .widget {
+	float: left;
 	/* how do you make the widgets float next to each other? */
-	/* what happens when you change float left to float right? why? */
+	/* what happens when you change float left to float right? why? -- because the first element in the html is floated right, then others are floated around it. it was suggested on stack overflow that the container should be floated right and the widgets floated left inside it to preserve the original order */
 }
 
 
 .footer {
-	/* hint! */
+	clear: both;
 }
 
 
-/* Bonus: what happens if you make a couple of the widgets taller than the other? */
-/*.widget.tall {}*/
+/* Bonus: what happens if you make a couple of the widgets taller than the other? -- when floating left, elements after the tall element will not line up on the left side of the tall one. they will float around it on the right side until there's space again on the right side or below the tall element */
 
-/* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order? */
+/*
+.widget.tall {
+	height: 560px;
+}
+*/
+
+/* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order? -- clear on the left */
 .widget.fix {
 	background: #8F1B65;
+	clear: left;
 }
