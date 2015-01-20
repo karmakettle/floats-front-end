@@ -7,7 +7,11 @@
 	</head>
 
 	<body>
-	<!-- Make me look like Example 05, with the stacked sub-content divs floated beside the sidebar. This time, use fluid percentage widths instead of pixel values! See what happens when you resize your browser window. Where does it break? Bonus: try making sidebar a pixel width and main a percentage. What happens then? How would you avoid this if you needed the sidebar to always be at least N pixels wide? -->
+	<!-- Make me look like Example 05, with the stacked sub-content divs floated beside the sidebar. This time, use fluid percentage widths instead of pixel values! See what happens when you resize your browser window. Where does it break? -- when the window's dimensions become smaller
+
+Bonus: try making sidebar a pixel width and main a percentage. What happens then? -- when the screen gets smaller, the subcontent boxes stack below the sidebar. also, the sidebar could potentially reach outside its container.
+
+How would you avoid this if you needed the sidebar to always be at least N pixels wide? -- set a min-width for the sidebar to prevent it from falling below the desired N pixels; set a min-width for the container div that encompasses everything so that the subcontent divs will never have the opportunity to stack below the sidebar (and everything else will remain in place as well) -->
 		<div class="container">
 			<div class="header">
 				<div class="logo">logo</div>
