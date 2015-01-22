@@ -5,14 +5,49 @@
 
 /* Example 11 */
 
-.header {}
+.header {
+	min-width: 910px;
+}
 
-.main-content {}
+.header::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+.logo {
+	float: left;
+}
+
+.navigation {
+	float: right;
+}
+
+.main-content {
+	min-width: 910px;
+}
 /* hint! */
 
-.post {}
+.post::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
 /* hint! */
 
-.image {}
+.image {
+	float: left;
+	width: 10em;
+	height: 10em;
+}
 
-.post_excerpt {}
+.post_excerpt {
+	float: right;
+	width: 75%;
+}
+
+/* there are still issues with this page. if the screen is smaller than 900px, the user has to side-scroll. if the screen is really large, the post is floated pretty far to the right, even though i'm using a percentage. */
