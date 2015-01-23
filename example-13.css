@@ -5,4 +5,140 @@
 
 /* Example 13 */
 
-/* I'm blank! Write some CSS to style your layout! */
+.container {
+	min-width: 1230px;
+}
+
+.top-nav {
+	background: #2AA7E3;
+	padding: 15px 0 0 0;
+	height: 5em;
+}
+
+.top-nav::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+.logo {
+	float: left;
+	margin: 0 0 0 5em;
+	width: 10em;
+	height: 3em;
+	background: #2AA7E3;
+	color: white;
+	border: 2px solid white;
+	padding: 15px;
+}
+
+.button-container {
+	float: left;
+	margin-left: 4em;
+	padding: 8px 0 0 0;
+	border: 2px solid white;
+}
+.button {
+	float: left;
+	background: #1493D1;
+	border-radius: 25px;
+	width: 6em;
+	height: 1em;
+	padding-bottom: 10px;
+	margin: 0 5px 5px 5px;
+}
+
+.profile-img {
+	float: right;
+	margin-right: 5px;
+	border: 2px solid white;
+	padding: 0;
+}
+
+.profile-img img {
+	width: 3em;
+	height: 3em;
+	border-radius: 23px;
+}
+
+.acct-dropdown {
+	float: right;
+	width: 9em;
+	margin-right: 5em;
+	padding: 1em 0 0 0;
+	border: 2px solid white;
+}
+
+select {
+	width: 9em;
+}
+
+.main-body {
+	background: #E9E9E9;
+}
+
+.main-body::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+.skills-panel {
+	float: left;
+	width: 60%;
+	border-radius: 10px;
+	background: white;
+}
+
+.skill-set {
+	background: #F8F8F8;
+}
+
+.skill-row {
+	text-align: center;
+	background: #FBF5F5;
+	border: 2px solid white;
+}
+
+.skill {
+	display: inline-block;
+	background: #FAA919;
+	width: 6em;
+	height: 6em;
+	border-radius: 70px;
+	margin: 0 2em 0 2em;
+}
+
+.checkpoint {
+	background: #FCF2D8;
+	border: 2px solid white;
+}
+
+.checkpoint-button {
+	background: #E9E9E9;
+	width: 15em;
+	height: 2em;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+
+.progress-bar {
+	float: right;
+	width: 30%;
+	border-radius: 10px;
+	background: white;
+}
+
+.progress-graph {
+	background: #F8F8F8;
+	height: 25em;
+}
+
+.bottom-nav {
+	background: #8C8C8C;
+	height: 5em;
+}
