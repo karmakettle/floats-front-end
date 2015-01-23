@@ -10,6 +10,8 @@
 }
 
 .top-nav {
+	position: relative;
+	text-align: center;
 	background: #2AA7E3;
 	padding: 15px 0 0 0;
 	height: 5em;
@@ -24,7 +26,9 @@
 }
 
 .logo {
-	float: left;
+	display: inline-block;
+	position: relative;
+	bottom: 1em;
 	margin: 0 0 0 5em;
 	width: 10em;
 	height: 3em;
@@ -35,8 +39,8 @@
 }
 
 .button-container {
-	float: left;
-	margin-left: 4em;
+	display: inline-block;
+	margin: 0 4em 0 4em;
 	padding: 8px 0 0 0;
 	border: 2px solid white;
 }
@@ -51,7 +55,7 @@
 }
 
 .profile-img {
-	float: right;
+	display: inline-block;
 	margin-right: 5px;
 	border: 2px solid white;
 	padding: 0;
@@ -64,10 +68,12 @@
 }
 
 .acct-dropdown {
-	float: right;
+	display: inline-block;
+	position: relative;
+	bottom: 1em;
+	margin: 0 5em 0 0;
 	width: 9em;
-	margin-right: 5em;
-	padding: 1em 0 0 0;
+	padding: 0;
 	border: 2px solid white;
 }
 
